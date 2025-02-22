@@ -33,7 +33,7 @@ public class ObjectPool<T> where T : MonoBehaviour
         currentPoolSize++;
     }
 
-    public T GetFromPool()
+    public T TryGetFromPool()
     {
         if (availableObjects.Count == 0)
         {

@@ -15,7 +15,7 @@ public class BulletPool : MonoBehaviour
 
     public Bullet GetBullet()
     {
-        Bullet bullet = pool.GetFromPool();
+        Bullet bullet = pool.TryGetFromPool();
         if (bullet != null)
         {
             bullet.Initialize(pool);
